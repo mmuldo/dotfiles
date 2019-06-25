@@ -231,6 +231,6 @@ if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
 fi
 export ANSIBLE_PLAYBOOKS_DIR=~/code/ansible-playbooks
 
-export PATH=$PATH:/home/han/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
-source '/home/han/.local/bin/azure-cli/az.completion'
+# source '$HOME/.local/bin/azure-cli/az.completion'
