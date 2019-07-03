@@ -151,6 +151,7 @@ alias ns="new_script --path . --name"
 alias nt="new_script --name"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias v='vim'
+alias vv='vim ~/.vimrc'
 
 update_golang() {
     # update golang pacman package
