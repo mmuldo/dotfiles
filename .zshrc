@@ -235,3 +235,5 @@ export ANSIBLE_PLAYBOOKS_DIR=~/code/ansible-playbooks
 export PATH=$PATH:$HOME/.local/bin
 
 # source '$HOME/.local/bin/azure-cli/az.completion'
+
+export VAULT_ADDR='https://vault.wts-ops.com/'
