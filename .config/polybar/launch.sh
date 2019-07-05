@@ -20,6 +20,7 @@ active_monitors=$(xrandr -q | grep " connected" | awk "{print $"${1:-1}"}" ORS="
 work_desktop="eDP1 VIRTUAL3 "
 # work_desktop="DVI-I-1 DP-1 DVI-D-0 "
 work_laptop="eDP1 "
+home_laptop="eDP-1 "
 home_desktop="DVI-D-0 HDMI-0 DP-4 "
 home_desktop="DVI-D-0 DP-4 "
 
@@ -39,6 +40,10 @@ function set_monitor_vars() {
         $work_laptop )
             export_monitor_vars "" "eDP1" ""
             mode="work laptop"
+            ;;
+        $home_laptop )
+            export_monitor_vars "" "eDP-1" ""
+            mode="home laptop"
             ;;
         $home_desktop )
             # export_monitor_vars "HDMI-0" "DP-4" "DVI-D-0"
