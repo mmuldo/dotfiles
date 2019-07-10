@@ -16,7 +16,7 @@ export RUST_SRC_PATH=~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/ru
 export PATH=/usr/bin/robo3t/bin:$PATH
 
 ## vimgolf
-export PATH="$PATH:/home/$USER/.gem/ruby/2.5.0/gems/vimgolf-0.4.8/bin"
+export PATH="$PATH:/home/$USER/.gem/ruby/2.6.0/gems/vimgolf-0.4.8/bin"
 ## end vimgolf
 
 export PATH=~/.local/bin/work:$PATH

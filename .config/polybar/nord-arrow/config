@@ -360,6 +360,14 @@ ramp-2 = "  "
 ramp-1 = "  "
 ramp-0 = "  "
 
+[module/wired-network]
+type = internal/network
+interface = eth1
+
+[module/wireless-network]
+type = internal/network
+interface = wlan1
+
 [module/powermenu]
 type = custom/menu
 expand-right = true

@@ -38,6 +38,9 @@ Plug 'hashivim/vim-terraform'
 " NERDTree
 Plug 'scrooloose/nerdtree'
 
+" Instant Markdown viewer
+Plug 'suan/vim-instant-markdown'
+
 " Plug 'svermeulen/vim-easyclip'
 
 " The following are examples of different formats supported.

@@ -21,7 +21,7 @@ gaps left   10
 gaps right  10
 gaps bottom 10
 
-workspace $ws4 gaps left 400
+# workspace $ws4 gaps left 400
 # gaps outer 17
 
 ###################
@@ -325,6 +325,8 @@ for_window [class="trust"] floating enable
 
 # spotify needs to be moved instead of assigned due to a bug with spotify
 for_window [class="Spotify"] move to workspace $ws0
+for_window [class="teams-for-linux"] move to workspace $ws4
+for_window [class="Prospect Mail"] move to workspace $ws4
 
 
 # FIREFOX
@@ -377,7 +379,6 @@ assign [class="Firefox"] $ws3
 
 
 assign [class="ckb-next"] $ws9
-assign [class="teams-for-linux"] $ws4
 
 # games
 assign [class="Steam"] $ws8

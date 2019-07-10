@@ -232,11 +232,14 @@ if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
 fi
 export ANSIBLE_PLAYBOOKS_DIR=~/code/ansible-playbooks
 export TERRAFORM_MODULES_DIR=~/code/terraform-modules
+export RG_BLACK_LIST=1709-builder,devops-dev,mmul-dev
 
 export PATH=$PATH:$HOME/.local/bin
 
-# source '$HOME/.local/bin/azure-cli/az.completion'
+source $HOME/.local/bin/azure-cli/az.completion
 
 export VAULT_ADDR='https://vault.wts-ops.com/'
 
 export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+
+export PATH=$PATH:/usr/local/bin
