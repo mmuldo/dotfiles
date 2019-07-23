@@ -22,7 +22,7 @@ work_desktop="eDP1 VIRTUAL3 "
 work_laptop="eDP1 "
 home_laptop="eDP-1 "
 home_desktop="DVI-D-0 HDMI-0 DP-4 "
-home_desktop="DVI-D-0 DP-4 "
+# home_desktop="DVI-D-0 DP-4 "
 
 function export_monitor_vars() {
     export MONITOR_LEFT=$1
@@ -46,8 +46,8 @@ function set_monitor_vars() {
             mode="home laptop"
             ;;
         $home_desktop )
-            # export_monitor_vars "HDMI-0" "DP-4" "DVI-D-0"
-            export_monitor_vars "" "DP-4" "DVI-D-0"
+            export_monitor_vars "DP-4" "DVI-D-0" "HDMI-0"
+            # export_monitor_vars "" "DP-4" "DVI-D-0"
             mode="home desktop"
             ;;
         * )
@@ -66,7 +66,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 if [[ -z $polybar_theme ]]; then
 
     i3-msg gaps top all set 10
-    export polybar_theme=$HOME/.config/polybar/nord-arrow/config
+    export polybar_theme=$HOME/.config/polybar/themes/nord-arrow/config
 fi
 
 polybar -r main &

@@ -153,6 +153,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias v='vim'
 alias vv='vim ~/.vimrc'
 
+alias wtsvpn='sudo openfortivpn -c ~/wts/openfortivpn/config'
+
 update_golang() {
     # update golang pacman package
     echo "\nUpdating golang...\n"
