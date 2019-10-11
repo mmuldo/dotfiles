@@ -1,24 +1,14 @@
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# title      Nord Termite                                    +
-# project    nord-termite                                    +
-# version    0.2.0                                           +
-# repository https://github.com/arcticicestudio/nord-termite +
-# author     Arctic Ice Studio                               +
-# email      development@arcticicestudio.com                 +
-# copyright  Copyright (C) 2016                              +
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#
 [options]
 scrollback_lines = -1
 font = Hack 12
 browser = firefox
 
 [colors]
-foreground = #D8DEE9
-background = #2E3440
-foreground_bold = #D8DEE9
-cursor = #D8DEE9
-cursor_foreground = #2E3440
+foreground = #E5E9F0
+background = rgba(59, 66, 82, 0.750000)
+foreground_bold = #E5E9F0
+cursor = #E5E9F0
+cursor_foreground = #3B4252
 highlight = #4C566A
 
 color0  = #3B4252

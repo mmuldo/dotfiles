@@ -15,6 +15,7 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
 " uncomment the line below if powerline installed with python3
 " let g:powerline_pycmd = 'py3'
 
@@ -40,6 +41,12 @@ Plug 'scrooloose/nerdtree'
 
 " Instant Markdown viewer
 Plug 'suan/vim-instant-markdown'
+
+" surround
+Plug 'tpope/vim-surround'
+
+" comment toggler
+Plug 'scrooloose/nerdcommenter'
 
 " Plug 'svermeulen/vim-easyclip'
 

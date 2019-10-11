@@ -50,6 +50,9 @@
 "xterm"
   control + b:2
 
+# "volume up 3"
+#   F3
+
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
 #

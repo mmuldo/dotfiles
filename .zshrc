@@ -212,7 +212,7 @@ alias passgen=generate_password
 ## CUSTOM KEY BINDINGS ##
 ## zsh vi-mode settings
 # remaps ESC to fd
-bindkey -M viins 'fd' vi-cmd-mode
+#bindkey -M viins 'fd' vi-cmd-mode
 bindkey 'lk' autosuggest-accept
 
 

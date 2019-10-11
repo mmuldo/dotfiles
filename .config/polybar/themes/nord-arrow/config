@@ -26,7 +26,7 @@ module-margin-left = 0
 module-margin-right = 0
 modules-left = i3 -i3
 modules-center = 
-modules-right =  filesystem  -volume2 -volume alsa-switch pulseaudio-tail -memory2 -memory memory -cpu2 -cpu cpu -temp2 -temp temperature -time2 -time time -calendar2 -calendar calendar 
+modules-right =  filesystem  -volume2 -volume alsa-switch pulseaudio-tail -memory2 -memory memory -cpu2 -cpu cpu -temp2 -temp temperature -time2 -time time -batt2 -batt battery -calendar2 -calendar calendar 
 
 
 [bar/left.bottom]
@@ -140,13 +140,13 @@ content = "%{F#5E81AC} "
 [module/-calendar]
 type = custom/text
 content-foreground = ${colors.nord2}
-content-background = ${colors.nord8}
+content-background = ${colors.nord10}
 content = ""
 
 [module/-calendar2]
 type = custom/text
-content-foreground = ${colors.nord8}
-content-background = ${colors.nord10}
+content-foreground = ${colors.nord10}
+content-background = ${colors.nord8}
 content = ""
 
 [module/-time]
@@ -177,6 +177,18 @@ content = ""
 type = custom/text
 content-foreground = ${colors.nord4}
 content-background = ${colors.nord3}
+content = ""
+
+[module/-batt]
+type = custom/text
+content-foreground = ${colors.nord8}
+content-background = ${colors.nord4}
+content = ""
+
+[module/-batt2]
+type = custom/text
+content-foreground = ${colors.nord4}
+content-background = ${colors.nord10}
 content = ""
 
 [module/-cpu]
@@ -367,6 +379,29 @@ interface = eth1
 [module/wireless-network]
 type = internal/network
 interface = wlan1
+
+[module/battery]
+type = internal/battery
+time-format = %H:%M
+format-charging = <ramp-capacity> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+format-discharging-background = ${colors.nord8}
+format-discharging-foreground = ${colors.nord0}
+format-discharging-padding = 1
+
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+format-charging-background = ${colors.nord8}
+format-charging-foreground = ${colors.nord0}
+battery = BAT0
+adapter = ADP1
 
 [module/powermenu]
 type = custom/menu
