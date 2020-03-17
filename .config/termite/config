@@ -4,11 +4,11 @@ font = Hack 12
 browser = firefox
 
 [colors]
-foreground = #E5E9F0
-background = rgba(59, 66, 82, 0.750000)
-foreground_bold = #E5E9F0
-cursor = #E5E9F0
-cursor_foreground = #3B4252
+foreground = #D8DEE9
+background = rgba(46, 52, 64, 1)
+foreground_bold = #D8DEE9
+cursor = #D8DEE9
+cursor_foreground = #2E3440
 highlight = #4C566A
 
 color0  = #3B4252

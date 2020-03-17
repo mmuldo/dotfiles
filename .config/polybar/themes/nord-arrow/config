@@ -3,13 +3,13 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 [colors]
-# include-file = $HOME/.config/polybar/nord/colors
-background = ${colors.nord0}
-background-alt = ${colors.nord9}
-foreground = ${colors.nord4}
-foreground-alt = ${colors.nord4}
-secondary = ${colors.nord0}
-alert = ${colors.nord14}
+# include-file = $HOME/.config/polybar/color/colors
+background = ${colors.color0}
+background-alt = ${colors.color9}
+foreground = ${colors.color4}
+foreground-alt = ${colors.color4}
+secondary = ${colors.color0}
+alert = ${colors.color14}
 
 ;;=========================================================;;
 ;;                                                         ;;
@@ -41,10 +41,10 @@ inherit = bar/base
 monitor = ${env:MONITOR_MAIN}
 bottom = true
 modules-left = yadm-checker.sh
-modules-right = nord.arrow.0-10 updates-arch nord.arrow.10-2 dropbox-watcher
+modules-right = color.arrow.0-10 updates-arch nord.arrow.10-2 dropbox-watcher
 modules-center = 
 tray-position = right
-tray-background = ${colors.nord2}
+tray-background = ${colors.color2}
 
 
 [bar/right]
@@ -90,19 +90,19 @@ content = "%{F#3B4252 B#BF616A}  "
 
 [module/-i3]
 type = custom/text
-content-foreground = ${colors.nord4}
+content-foreground = ${colors.color4}
 content = 
 
 [module/-i3]
 type = custom/text
-content-background = ${colors.nord0}
-content-foreground = ${colors.nord1}
+content-background = ${colors.color0}
+content-foreground = ${colors.color1}
 content = "  "
 
 [module/-dropbox]
 type = custom/text
-content-foreground = ${colors.nord2}
-content-background = ${colors.nord0}
+content-foreground = ${colors.color2}
+content-background = ${colors.color0}
 content = 
 
 [module/]
@@ -111,26 +111,26 @@ content = %{F#3B4252}
 
 [module/-volume]
 type = custom/text
-content-foreground = ${colors.nord8}
-content-background = ${colors.nord3}
+content-foreground = ${colors.color8}
+content-background = ${colors.color3}
 content = ""
 
 [module/-volume2]
 type = custom/text
-content-foreground = ${colors.nord3}
-content-background = ${colors.nord1}
+content-foreground = ${colors.color3}
+content-background = ${colors.color1}
 content = ""
 
-[module/nord.arrow.10-2]
+[module/color.arrow.10-2]
 type = custom/text
-content-foreground = ${colors.nord2}
-content-background = ${colors.nord10}
+content-foreground = ${colors.color2}
+content-background = ${colors.color10}
 content = ""
 
-[module/nord.arrow.0-10]
+[module/color.arrow.0-10]
 type = custom/text
-content-foreground = ${colors.nord10}
-content-background = ${colors.nord0}
+content-foreground = ${colors.color10}
+content-background = ${colors.color0}
 content = ""
 
 [module/-2]
@@ -139,86 +139,86 @@ content = "%{F#5E81AC} "
 
 [module/-calendar]
 type = custom/text
-content-foreground = ${colors.nord2}
-content-background = ${colors.nord10}
+content-foreground = ${colors.color2}
+content-background = ${colors.color10}
 content = ""
 
 [module/-calendar2]
 type = custom/text
-content-foreground = ${colors.nord10}
-content-background = ${colors.nord8}
+content-foreground = ${colors.color10}
+content-background = ${colors.color8}
 content = ""
 
 [module/-time]
 type = custom/text
-content-foreground = ${colors.nord10}
-content-background = ${colors.nord9}
+content-foreground = ${colors.color10}
+content-background = ${colors.color9}
 content = ""
 
 [module/-time2]
 type = custom/text
-content-foreground = ${colors.nord9}
-content-background = ${colors.nord8}
+content-foreground = ${colors.color9}
+content-background = ${colors.color8}
 content = ""
 
 [module/-time3]
 type = custom/text
-content-foreground = ${colors.nord10}
-content-background = ${colors.nord2}
+content-foreground = ${colors.color10}
+content-background = ${colors.color2}
 content = ""
 
 [module/-temp]
 type = custom/text
-content-foreground = ${colors.nord8}
-content-background = ${colors.nord4}
+content-foreground = ${colors.color8}
+content-background = ${colors.color4}
 content = ""
 
 [module/-temp2]
 type = custom/text
-content-foreground = ${colors.nord4}
-content-background = ${colors.nord3}
+content-foreground = ${colors.color4}
+content-background = ${colors.color3}
 content = ""
 
 [module/-batt]
 type = custom/text
-content-foreground = ${colors.nord8}
-content-background = ${colors.nord4}
+content-foreground = ${colors.color8}
+content-background = ${colors.color4}
 content = ""
 
 [module/-batt2]
 type = custom/text
-content-foreground = ${colors.nord4}
-content-background = ${colors.nord10}
+content-foreground = ${colors.color4}
+content-background = ${colors.color10}
 content = ""
 
 [module/-cpu]
 type = custom/text
-content-foreground = ${colors.nord3}
-content-background = ${colors.nord4}
+content-foreground = ${colors.color3}
+content-background = ${colors.color4}
 content = ""
 
 [module/-memory]
 type = custom/text
-content-foreground = ${colors.nord2}
-content-background = ${colors.nord4}
+content-foreground = ${colors.color2}
+content-background = ${colors.color4}
 content = ""
 
 [module/-memory2]
 type = custom/text
-content-foreground = ${colors.nord4}
-content-background = ${colors.nord8}
+content-foreground = ${colors.color4}
+content-background = ${colors.color8}
 content = ""
 
 [module/]
 type = custom/text
-format-background = ${colors.nord2}
-format-foreground = ${colors.nord1}
+format-background = ${colors.color2}
+format-foreground = ${colors.color1}
 content = 
 
 [module/-cpu2]
 type = custom/text
-content-foreground = ${colors.nord4}
-content-background = ${colors.nord2}
+content-foreground = ${colors.color4}
+content-background = ${colors.color2}
 content = ""
 ; 
 ; 
@@ -232,7 +232,7 @@ type = custom/script
 exec = isrunning_dropbox.sh
 interval = 5
 click-left = dropbox-isrunning.sh --toggle
-format-background = ${colors.nord2}
+format-background = ${colors.color2}
 
 
 
@@ -240,7 +240,7 @@ format-background = ${colors.nord2}
 type = internal/fs
 interval = 25
 mount-0 = /
-label-mounted-background = ${colors.nord1}
+label-mounted-background = ${colors.color1}
 label-mounted-foreground = ${colors.foreground}
 label-mounted =  " %{F#81A1C1}%{F-} %mountpoint% %percentage_used%% "
 label-unmounted = %mountpoint% not mounted
@@ -256,16 +256,16 @@ reverse-scroll = false
 fuzzy-match = true
 format = <label-mode><label-state>
 label-mode = %mode%
-label-mode-background = ${colors.nord11}
-label-mode-foreground = ${colors.nord4}
-label-focused-foreground = ${colors.nord2}
+label-mode-background = ${colors.color11}
+label-mode-foreground = ${colors.color4}
+label-focused-foreground = ${colors.color2}
 label-focused-background = ${colors.background-alt}
 label-focused-padding-right = 1
 ; visible is the focused workspace on non focused monitor, confusing, i know. :)
 label-visible-padding-right =1
-label-visible-background=${colors.nord3}
-label-unfocused-foreground = ${colors.nord4}
-label-unfocused-background = ${colors.nord1}
+label-visible-background=${colors.color3}
+label-unfocused-foreground = ${colors.color4}
+label-unfocused-background = ${colors.color1}
 label-unfocused-padding-left = 1
 label-unfocused-padding-right = 1
 ; Available tokens:
@@ -274,8 +274,8 @@ label-unfocused-padding-right = 1
 ;   %index%
 ;   %output%
 ; Default: %icon%  %name%
-label-urgent-foreground = ${colors.nord4}
-label-urgent-background = ${colors.nord11}
+label-urgent-foreground = ${colors.color4}
+label-urgent-background = ${colors.color11}
 label-urgent-padding = 1
 
 [module/mpd]
@@ -298,8 +298,8 @@ interval = 2
 label = %percentage:2%%
 
 format = <label> <ramp-coreload>
-format-background = ${colors.nord3}
-format-foreground = ${colors.nord4}
+format-background = ${colors.color3}
+format-foreground = ${colors.color4}
 format-padding = 2
 ramp-coreload-0 = %{F#5E81AC B#4C566A}▁
 ramp-coreload-1 = %{F#5E81AC B#4C566A}▂
@@ -317,19 +317,19 @@ interval = 1
 format = <label> <bar-used>
 label = " %percentage_used%%" 
 format-padding = 2
-format-background = ${colors.nord2}
-format-foreground = ${colors.nord5}
+format-background = ${colors.color2}
+format-foreground = ${colors.color5}
 
 ; Only applies if <bar-used> is used
 bar-used-indicator =
 bar-used-width = 10
-bar-used-foreground-0 = ${colors.nord10}
-bar-used-foreground-1 = ${colors.nord9}
-bar-used-foreground-2 = ${colors.nord8}
-bar-used-foreground-3 = ${colors.nord10}
+bar-used-foreground-0 = ${colors.color10}
+bar-used-foreground-1 = ${colors.color9}
+bar-used-foreground-2 = ${colors.color8}
+bar-used-foreground-3 = ${colors.color10}
 bar-used-fill = ▐
 bar-used-empty = ▐
-bar-used-empty-foreground = ${colors.nord3}
+bar-used-empty-foreground = ${colors.color3}
 
 [module/pulseaudio-tail]
 type = custom/script
@@ -345,8 +345,8 @@ format-padding = 1
 type = internal/date
 interval = 5
 time = %I:%M %p
-format-foreground = ${colors.nord5}
-format-background = ${colors.nord10}
+format-foreground = ${colors.color5}
+format-background = ${colors.color10}
 label = "   %time%  "
 
 [module/calendar]
@@ -354,16 +354,16 @@ type = internal/date
 interval = 5
 date = %m/%d/%Y
 date-alt = " %Y-%m-%d"
-format-background = ${colors.nord2}
-format-foreground = ${colors.nord5}
+format-background = ${colors.color2}
+format-foreground = ${colors.color5}
 label = "   %date%  "
 
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 70
-format-background = ${colors.nord8}
-format-foreground = ${colors.nord0}
+format-background = ${colors.color8}
+format-foreground = ${colors.color0}
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 label = "%temperature%  "
@@ -387,8 +387,8 @@ format-charging = <ramp-capacity> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 label-charging = %percentage%%
 label-discharging = %percentage%%
-format-discharging-background = ${colors.nord8}
-format-discharging-foreground = ${colors.nord0}
+format-discharging-background = ${colors.color8}
+format-discharging-foreground = ${colors.color0}
 format-discharging-padding = 1
 
 ; Only applies if <ramp-capacity> is used
@@ -398,8 +398,8 @@ ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 
-format-charging-background = ${colors.nord8}
-format-charging-foreground = ${colors.nord0}
+format-charging-background = ${colors.color8}
+format-charging-foreground = ${colors.color0}
 battery = BAT0
 adapter = ADP1
 
