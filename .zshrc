@@ -196,6 +196,10 @@ function generate_password() {
 }
 alias passgen=generate_password
 
+function brightness {
+    echo "$1" | sudo tee /sys/class/backlight/intel_backlight/brightness
+}
+
 #function _update-aur-pkglist() {
 #    trizen -Qeqm > ~/code/dot-ansible/roles/pacman/files/aur-pkgs \
 #            && yadm diff ~/.config/dotfiles/arch-packages/aur
@@ -215,6 +219,7 @@ alias passgen=generate_password
 #bindkey -M viins 'fd' vi-cmd-mode
 bindkey 'lk' autosuggest-accept
 
+autoload -Uz compinit && compinit
 
 ## Kubernetes
 command -v kubectl >/dev/null 2>&1
@@ -238,10 +243,12 @@ export RG_BLACK_LIST=1709-builder,devops-dev,mmul-dev
 
 export PATH=$PATH:$HOME/.local/bin
 
-source $HOME/.local/bin/azure-cli/az.completion
+source $HOME/.local/lib/azure-cli/az.completion
 
 export VAULT_ADDR='https://vault.wts-ops.com/'
 
 export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
 
 export PATH=$PATH:/usr/local/bin
+
+export PATH=$PATH:/home/matt/.local/bin
