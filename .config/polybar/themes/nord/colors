@@ -15,6 +15,23 @@ nord13 = #EBCB8B
 nord14 = #A3BE8C
 nord15 = #B48EAD
 
+color0 = #3B4252 1
+color1 = #BF616A 11
+color2 = #A3BE8C 14
+color3 = #EBCB8B 13
+color4 = #81A1C1 9
+color5 = #B48EAD 15
+color6 = #88C0D0 8
+color7 = #E5E9F0 5
+color8 = #4C566A 3
+color9 = #BF616A
+color10 = #A3BE8C
+color11 = #EBCB8B
+color12 = #81A1C1
+color13 = #B48EAD
+color14 = #8FBCBB 7
+color15 = #ECEFF4 6
+
 primary-bg=${colors.nord9}
 primary-fg=${colors.nord0}
 secondary-bg=${colors.nord0}
